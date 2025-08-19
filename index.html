@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Headlines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-bar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="news-headline-logo.png" alt="News Headlines logo">
+    </div>
+
+    <!-- Category buttons -->
+    <div class="tabs">
+      <button onclick="loadCategory('general')">General</button>
+      <button onclick="loadCategory('sports')">Sports</button>
+      <button onclick="loadCategory('technology')">Technology</button>
+      <button onclick="loadCategory('entertainment')">Entertainment</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h1 class="heading">News Headlines</h1>
+  <hr>
+  <h3>Trending News</h3>
+
+  <!-- News cards will go here -->
+  <div id="news-container" class="cards"></div>
+
+  <!-- Get More button -->
+  <div class="get-more-container">
+    <button onclick="loadMore()">Get More</button>
+  </div>
+</main>
+
+<script src="key.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
